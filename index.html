@@ -70,29 +70,51 @@
 
   <br><br>
 
-  <h4>Any inquiry do email me at afifdanial45@gmail.com</h4>
+  <div class="container">
+  <form action="index.html">
+    <h4>Any inquiry do email me at afifdanial45@gmail.com</h4>
 
-  <form action = "index.html" method = "post">
-    <div>
-      <label for = "name">Name:</label><br>
-      <input type = "text" id = "name" name = "user_name" placeholder = "Your Name">
+  <div class="row">
+    <div class="form-head">
+      <label for="fname">First Name</label>
     </div>
-
-    <div>
-      <label for = "mail">E-mail:</label><br>
-      <input type = "email" id = "mail" name = "user_mail" placeholder = "Your E-mail">
+    <div class="form-box">
+      <input type="text" id="fname" name="firstname" placeholder="Your first name">
     </div>
+  </div>
 
-    <div>
-      <label for = "msg">Message:</label><br>
-      <textarea id = "msg" name = "user_message" placeholder = "Your Message"></textarea>
+  <div class="row">
+    <div class="form-head">
+      <label for="lname">Last Name</label>
     </div>
-
-    <br><br>
-
-    <div class = "button">
-      <button type = "submit">Submit</button>
+    <div class="form-box">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
     </div>
+  </div>
+
+  <div class="row">
+    <div class="form-head">
+      <label for="email">E-mail</label>
+    </div>
+    <div class="form-box">
+      <input type="text" id="mail" name="email" placeholder="Your e-mail address">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-head">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="form-box">
+      <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
   </form>
+  </div>
 </body>
 </html>
