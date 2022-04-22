@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="My Schedule">
+  <meta author="Afif Danial">
   <title>My Class Schedule</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Class Schedule for Semester 2 2021/2022</h1>
-  <h4>Name: Muhammad Afif Danial Bin Mohd Zuhairi<br>
-  Matric Number: 2011393<br>
-  Kuliyyah: ICT (BCS)</h4>
+  <h1 class="container">Class Schedule for Semester 2 2021/2022</h1>
+  <h4 class="container">Name: Muhammad Afif Danial Bin Mohd Zuhairi<br>
+    University: International Islamic University of Malaysia<br>
+    Matric Number: 2011393<br>
+    Kulliyah: ICT (BCS)</h4>
 
-  <table>
+  <table class="container">
     <tr class="center">
       <th><b>Day/Time</b></th>
       <th><b>8:30-9:50</b></th>
@@ -72,48 +76,39 @@
 
   <div class="container">
   <form action="index.html">
-    <h4>Any inquiry do email me at afifdanial45@gmail.com</h4>
+    <h4>Any inquiry do fill up the form below</h4>
 
-  <div class="row">
-    <div class="form-head">
-      <label for="fname">First Name</label>
+    <div class="row">
+      <div class="form-head">
+        <label for="name">Name</label>
+      </div>
+      <div class="form-box">
+        <input type="text" id="name" name="name" placeholder="Your name">
+      </div>
     </div>
-    <div class="form-box">
-      <input type="text" id="fname" name="firstname" placeholder="Your first name">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="form-head">
-      <label for="lname">Last Name</label>
+    <div class="row">
+      <div class="form-head">
+        <label for="email">E-mail</label>
+      </div>
+      <div class="form-box">
+        <input type="text" id="mail" name="email" placeholder="Your e-mail address">
+      </div>
     </div>
-    <div class="form-box">
-      <input type="text" id="lname" name="lastname" placeholder="Your last name">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="form-head">
-      <label for="email">E-mail</label>
+    <div class="row">
+      <div class="form-head">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="form-box">
+        <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+      </div>
     </div>
-    <div class="form-box">
-      <input type="text" id="mail" name="email" placeholder="Your e-mail address">
-    </div>
-  </div>
+    <br>
 
-  <div class="row">
-    <div class="form-head">
-      <label for="subject">Subject</label>
+    <div class="row">
+      <input type="submit" value="Submit">
     </div>
-    <div class="form-box">
-      <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
-    </div>
-  </div>
-  <br>
-
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
   </form>
   </div>
 </body>
